@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description"><!-- Add description --></p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input type="text" id="name" placeholder="Enter your name" class="bar" required></input>
+        </label>
+        <label id="email-label">Enter your email<input type="email" id="email" placeholder="Enter your email" class="bar" required></input>
+        </label>
+        <label id="number-label">Enter your phone number<input type="number" id="number" min="6" max="12" placeholder="Enter your phone number" class="bar" required></input>
+        </label>
+        <label id="radios">
+          <h3 class="account">Select account type</h2>
+          <label><input type="radio" name="account-type" class="inline" /> Personal Account</label>
+          <label><input type="radio" name="account-type" class="inline"  /> Business Account</label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="referral">How did you hear about us?
+          <select id="dropdown" class="bar">
+            <option value="">(Select one)</option>
+            <option value="1">Our Webpage</option>
+            <option value="2">Job board</option>
+            <option value="3">Other</option>
+          </select>
+        </label>
+        <label>Provide a bio:
+          <textarea id="bio" rows="3" cols="30" placeholder="Tell us something about you" class="bar"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <input type="checkbox" id="terms" value="terms" class="inline" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <label>
+          <input type="checkbox" id="publi" value="publi" class="inline" /> I agree to be sent new offers and opportunities
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
